@@ -1,1 +1,1 @@
-if(hp<=0) instance_destroy();
+if(hp<=0 or x - oShip.x < -300) instance_destroy();
