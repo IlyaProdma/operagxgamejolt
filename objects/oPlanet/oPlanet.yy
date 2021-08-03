@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sShipNormal",
-    "path": "sprites/sShipNormal/sShipNormal.yy",
+    "name": "sPlanet",
+    "path": "sprites/sPlanet/sPlanet.yy",
   },
   "solid": true,
   "visible": true,
@@ -19,16 +19,8 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":26.0,"y":0.0,},
-    {"x":26.0,"y":26.0,},
-    {"x":0.0,"y":26.0,},
-  ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "physicsShapePoints": [],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -36,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oShip",
+  "name": "oPlanet",
   "tags": [],
   "resourceType": "GMObject",
 }
