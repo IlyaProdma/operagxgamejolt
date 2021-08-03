@@ -1,0 +1,1 @@
+score = oShip.x;
