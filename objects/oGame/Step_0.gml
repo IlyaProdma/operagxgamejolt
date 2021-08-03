@@ -1,1 +1,1 @@
-score = oShip.x;
+score = round(oShip.x);
