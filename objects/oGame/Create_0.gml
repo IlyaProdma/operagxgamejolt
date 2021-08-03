@@ -2,3 +2,4 @@
 #macro RES_H 768
 
 score = 0;
+alarm[0] = room_speed * 0.5;
