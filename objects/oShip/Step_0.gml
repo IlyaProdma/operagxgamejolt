@@ -26,9 +26,5 @@ if((key_enter) && (firingDelay < 0))
 		direction = other.image_angle;
 		image_angle = direction;
 	} 
-} 
-dist = point_distance(oShip.x, oShip.y, oPlanet.x, oPlanet.y); 
-if(dist <= 500) grav = 2;
-else grav = 0;
-move_towards_point(oPlanet.x, oPlanet.y, grav); 
+}
 
