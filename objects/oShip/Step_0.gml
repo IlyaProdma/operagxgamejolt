@@ -12,14 +12,10 @@ if(key_space)
 	sprite_index = sShipBoost;
 }
 else currentSpeed = constSpeed;
-vsp = 5;
-if (place_free(x + collisionSpeed, y))
-{
-	x += currentSpeed;
-	if(key_up) y -= vsp;
-	if(key_down) y += vsp;
-}
-else show_message("Game Over");
+vsp = 5
+x += currentSpeed;
+if(key_up && place_free(x, y - collisionSpeed)) y -= vsp;
+if(key_down && place_free(x, y + collisionSpeed)) y += vsp;
 
 if((key_enter) && (firingDelay < 0))
 {
