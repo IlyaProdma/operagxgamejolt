@@ -16,10 +16,6 @@ vsp = 5
 x += currentSpeed;
 if(key_up) y -= vsp;
 if(key_down) y += vsp;
-if (border_up.y - y > -43)
-	y += 5;
-if (border_down.y - y < 43)
-	y -= 5;
 if((key_enter) && (firingDelay < 0))
 {
 	firingDelay = 5; 

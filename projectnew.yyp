@@ -10,7 +10,6 @@
     {"id":{"name":"sShipNormal","path":"sprites/sShipNormal/sShipNormal.yy",},"order":2,},
     {"id":{"name":"oBarrier","path":"objects/oBarrier/oBarrier.yy",},"order":3,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":1,},
-    {"id":{"name":"oBorder","path":"objects/oBorder/oBorder.yy",},"order":6,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":2,},
     {"id":{"name":"sSparkle","path":"sprites/sSparkle/sSparkle.yy",},"order":1,},
     {"id":{"name":"sShipBoost","path":"sprites/sShipBoost/sShipBoost.yy",},"order":0,},
