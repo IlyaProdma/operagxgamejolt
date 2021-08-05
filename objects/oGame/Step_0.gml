@@ -1,1 +1,1 @@
-score = round(oShip.x);
+score = round(shipObj.x);
