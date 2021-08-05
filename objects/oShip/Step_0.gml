@@ -1,4 +1,4 @@
-key_up = keyboard_check(vk_up);
+ key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_space = keyboard_check(vk_space);
 key_enter = keyboard_check(vk_enter);
@@ -19,6 +19,7 @@ if(key_down) y += vsp;
 if((key_enter) && (firingDelay < 0))
 {
 	firingDelay = 5; 
+	audio_play_sound(mShooting, 1000, false);
 	with(instance_create_layer(x, y, "Bullets", oBullet))
 	{
 		speed = 12;
