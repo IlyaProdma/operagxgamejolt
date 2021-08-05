@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sBarrier","path":"sprites/sBarrier/sBarrier.yy",},"order":3,},
+    {"id":{"name":"mTheme","path":"sounds/mTheme/mTheme.yy",},"order":0,},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},"order":4,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":0,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":4,},
@@ -12,7 +13,9 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":1,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":2,},
     {"id":{"name":"sSparkle","path":"sprites/sSparkle/sSparkle.yy",},"order":1,},
+    {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},"order":6,},
     {"id":{"name":"sShipBoost","path":"sprites/sShipBoost/sShipBoost.yy",},"order":0,},
+    {"id":{"name":"mDeath","path":"sounds/mDeath/mDeath.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -48,6 +51,8 @@
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"background","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"sound_effects","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
