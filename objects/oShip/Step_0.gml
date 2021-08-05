@@ -14,8 +14,22 @@ if(key_space)
 else currentSpeed = constSpeed;
 vsp = 5
 x += currentSpeed;
-if(key_up) y -= vsp;
-if(key_down) y += vsp;
+if(key_up)
+{
+	y -= vsp;
+	if (key_space)
+		sprite_index = sShipBoostUpIdle;
+	else
+		sprite_index = sShipUpIdle;
+}
+if(key_down)
+{
+	y += vsp;
+	if (key_space)
+		sprite_index = sShipBoostDownIdle;
+	else
+		sprite_index = sShipDownIdle;
+}
 if((key_enter) && (firingDelay < 0))
 {
 	firingDelay = 5; 
