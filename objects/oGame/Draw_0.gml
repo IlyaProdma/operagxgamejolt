@@ -1,1 +1,0 @@
-draw_text(oCamera.x + 900, oCamera.y - 300, "SCORE: " + string(score));
