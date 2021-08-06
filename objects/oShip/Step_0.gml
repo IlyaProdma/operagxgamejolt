@@ -32,11 +32,11 @@ if(key_down)
 }
 if((key_enter) && (firingDelay < 0))
 {
-	firingDelay = 5; 
+	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
 	with(instance_create_layer(x, y, "Bullets", oBullet))
 	{
-		speed = 12;
+		speed = 15;
 		direction = other.image_angle;
 		image_angle = direction;
 	} 
