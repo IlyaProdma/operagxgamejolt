@@ -8,7 +8,7 @@ if(dist <= 300)
 	isActive = true;
 	with (oShip) 
 	{
-		spd = currentSpeed * dist * 0.002;
+		spd = currentSpeed * (300 - dist) * 0.0035;
 		move_towards_point(oX, oY, spd);
 	} 
 }
