@@ -1,19 +1,25 @@
- key_up = keyboard_check(vk_up);
+key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_space = keyboard_check(vk_space);
 key_enter = keyboard_check(vk_enter);
+key_shift = keyboard_check(vk_shift);
 sprite_index = sShipNormal;
 
-firingDelay = firingDelay - 1;
 
+firingDelay = firingDelay - 1;
+firingDelayRocket -= 1;
+
+vsp = 5
+x += currentSpeed;
 if(key_space)
 {
 	currentSpeed = constSpeed + boost;
+	vsp += boost/2.5;
 	sprite_index = sShipBoost;
 }
 else currentSpeed = constSpeed;
-vsp = 5
-x += currentSpeed;
+
+
 if(key_up)
 {
 	y -= vsp;
@@ -22,7 +28,7 @@ if(key_up)
 	else
 		sprite_index = sShipUpIdle;
 }
-if(key_down)
+else if(key_down)
 {
 	y += vsp;
 	if (key_space)
@@ -30,13 +36,29 @@ if(key_down)
 	else
 		sprite_index = sShipDownIdle;
 }
+
+
+
 if((key_enter) && (firingDelay < 0))
 {
 	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
-	with(instance_create_layer(x, y, "Bullets", oBullet))
+//	with(
+	instance_create_layer(x, y, "Bullets", oBullet)
+	//)
+	//{
+		//speed = 10 + shipObj.constSpeed;
+		//direction = other.image_angle;
+		//image_angle = direction;
+	//} 
+}
+if((key_shift) && (firingDelayRocket < 0))
+{
+	firingDelayRocket = 30; 
+	//audio_play_sound(mShooting, 1000, false);
+	with(instance_create_layer(x, y, "Rockets", oRocket))
 	{
-		speed = 15;
+		speed = 7 + shipObj.constSpeed;
 		direction = other.image_angle;
 		image_angle = direction;
 	} 
