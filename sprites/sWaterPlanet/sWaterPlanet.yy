@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 2,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 117,
   "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_bottom": 117,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 118,
+  "height": 118,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fb272af2-483f-4467-a2ac-143f6ed95655","path":"sprites/sBarrier/sBarrier.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb272af2-483f-4467-a2ac-143f6ed95655","path":"sprites/sBarrier/sBarrier.yy",},"LayerId":{"name":"eab5f332-b25c-4157-b3d2-38bc12a924e6","path":"sprites/sBarrier/sBarrier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBarrier","path":"sprites/sBarrier/sBarrier.yy",},"resourceVersion":"1.0","name":"fb272af2-483f-4467-a2ac-143f6ed95655","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"907cc81b-7aa2-459e-bdbd-4140d8a6ae28","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"907cc81b-7aa2-459e-bdbd-4140d8a6ae28","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"LayerId":{"name":"c9ac4e22-2708-47da-9c12-6e3b94274422","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sWaterPlanet","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"resourceVersion":"1.0","name":"907cc81b-7aa2-459e-bdbd-4140d8a6ae28","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBarrier","path":"sprites/sBarrier/sBarrier.yy",},
+    "spriteId": {"name":"sWaterPlanet","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"791a71d8-75ff-445f-92a3-c8a8cd8f9028","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb272af2-483f-4467-a2ac-143f6ed95655","path":"sprites/sBarrier/sBarrier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0cecb2b0-865c-45c9-a92f-1f84e26162a2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"907cc81b-7aa2-459e-bdbd-4140d8a6ae28","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 32,
-    "yorigin": 32,
+    "xorigin": 59,
+    "yorigin": 59,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBarrier","path":"sprites/sBarrier/sBarrier.yy",},
+    "parent": {"name":"sWaterPlanet","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},
     "resourceVersion": "1.3",
-    "name": "sBarrier",
+    "name": "sWaterPlanet",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eab5f332-b25c-4157-b3d2-38bc12a924e6","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c9ac4e22-2708-47da-9c12-6e3b94274422","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBarrier",
+  "name": "sWaterPlanet",
   "tags": [],
   "resourceType": "GMSprite",
 }
