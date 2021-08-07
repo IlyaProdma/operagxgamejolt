@@ -12,7 +12,7 @@ if (to_spawn_planet > 0)
 	    do {
 	        tries += 1;
 			x += random_range(0, 200);
-	        y = irandom(room_height)*random_range(0.1, 0.8)/random_range(0.1, 0.8);
+	        y = shipObj.y+irandom_range(-1, 1)*irandom_range(0, 325)*2*random_range(0.1, 0.8)/random_range(0.1, 0.8);
 	        done = !place_meeting(x, y, new_barrier);
 	    } until(done or tries > 10);
 	    if(not done) {
