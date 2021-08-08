@@ -37,23 +37,22 @@ else if(key_down)
 		sprite_index = sShipDownIdle;
 }
 
+shoot = key_enter - key_shift;
 
-
-if((key_enter) && (firingDelay < 0))
+if(((shoot == 1) || (shoot == 0 && key_enter)) && (firingDelay < 0))
 {
 	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
-
 	instance_create_layer(x, y, "Bullets", oBullet)
-
 }
-if((key_shift) && (firingDelayRocket < 0))
+if((shoot == -1) && (firingDelayRocket < 0))
 {
 	firingDelayRocket = 30; 
 	audio_play_sound(mRocket, 1000, false);
 	instance_create_layer(x, y, "Rockets", oRocket)
 
 }
+
 
 
 
