@@ -11,7 +11,12 @@ firingDelayRocket -= 1;
 
 vsp = 5
 x += currentSpeed;
-
+if(key_space)
+{
+	currentSpeed = constSpeed + boost;
+	vsp += boost/2.5;
+	sprite_index = sShipBoost;
+}
 move = key_up - key_down;
 if(move == 1)
 {
