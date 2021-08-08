@@ -5,5 +5,5 @@ currentSpeed = 0;
 //collisionSpeed = currentSpeed + 2;
 firingDelay = 0;
 firingDelayRocket = 0;
-
+gameOver = false;
  
