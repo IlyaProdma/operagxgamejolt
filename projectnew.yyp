@@ -10,6 +10,7 @@
     {"id":{"name":"sShipDownIdle","path":"sprites/sShipDownIdle/sShipDownIdle.yy",},"order":12,},
     {"id":{"name":"sShipBoostEnd","path":"sprites/sShipBoostEnd/sShipBoostEnd.yy",},"order":8,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":0,},
+    {"id":{"name":"mRocket","path":"sounds/mRocket/mRocket.yy",},"order":3,},
     {"id":{"name":"sShipUpIdle","path":"sprites/sShipUpIdle/sShipUpIdle.yy",},"order":10,},
     {"id":{"name":"sShipBoostDownIdle","path":"sprites/sShipBoostDownIdle/sShipBoostDownIdle.yy",},"order":16,},
     {"id":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"order":7,},

@@ -43,25 +43,16 @@ if((key_enter) && (firingDelay < 0))
 {
 	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
-//	with(
+
 	instance_create_layer(x, y, "Bullets", oBullet)
-	//)
-	//{
-		//speed = 10 + shipObj.constSpeed;
-		//direction = other.image_angle;
-		//image_angle = direction;
-	//} 
+
 }
 if((key_shift) && (firingDelayRocket < 0))
 {
 	firingDelayRocket = 30; 
-	//audio_play_sound(mShooting, 1000, false);
-	with(instance_create_layer(x, y, "Rockets", oRocket))
-	{
-		speed = 7 + shipObj.constSpeed;
-		direction = other.image_angle;
-		image_angle = direction;
-	} 
+	audio_play_sound(mRocket, 1000, false);
+	instance_create_layer(x, y, "Rockets", oRocket)
+
 }
 
 
