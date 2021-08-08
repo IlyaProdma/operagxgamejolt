@@ -11,16 +11,9 @@ firingDelayRocket -= 1;
 
 vsp = 5
 x += currentSpeed;
-if(key_space)
-{
-	currentSpeed = constSpeed + boost;
-	vsp += boost/2.5;
-	sprite_index = sShipBoost;
-}
-else currentSpeed = constSpeed;
 
-
-if(key_up)
+move = key_up - key_down;
+if(move == 1)
 {
 	y -= vsp;
 	if (key_space)
@@ -28,13 +21,24 @@ if(key_up)
 	else
 		sprite_index = sShipUpIdle;
 }
-else if(key_down)
+if(move == -1)
 {
 	y += vsp;
 	if (key_space)
 		sprite_index = sShipBoostDownIdle;
 	else
 		sprite_index = sShipDownIdle;
+}
+if(move == 0)
+{
+	sprite_index = sShipNormal;
+	if(key_space)
+	{
+		currentSpeed = constSpeed + boost;
+		vsp += boost/2.5;
+		sprite_index = sShipBoost;
+	}
+	else currentSpeed = constSpeed;
 }
 
 shoot = key_enter - key_shift;
