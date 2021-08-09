@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBarrier",
-    "path": "sprites/sBarrier/sBarrier.yy",
+    "name": "sAsteroid1",
+    "path": "sprites/sAsteroid1/sAsteroid1.yy",
   },
   "solid": true,
   "visible": true,
