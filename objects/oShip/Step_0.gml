@@ -9,13 +9,17 @@ sprite_index = sShipNormal;
 firingDelay = firingDelay - 1;
 firingDelayRocket -= 1;
 
-vsp = 5
+vsp = 5;
 x += currentSpeed;
 if(key_space)
 {
 	currentSpeed = constSpeed + boost;
 	vsp += boost/2.5;
 	sprite_index = sShipBoost;
+}
+else
+{
+	currentSpeed = constSpeed;
 }
 move = key_up - key_down;
 if(move == 1)
@@ -43,7 +47,10 @@ if(move == 0)
 		vsp += boost/2.5;
 		sprite_index = sShipBoost;
 	}
-	else currentSpeed = constSpeed;
+	else
+	{
+		currentSpeed = constSpeed;
+	}
 }
 
 shoot = key_enter - key_shift;

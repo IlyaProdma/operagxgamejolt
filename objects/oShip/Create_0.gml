@@ -6,5 +6,6 @@ currentSpeed = 0;
 firingDelay = 0;
 firingDelayRocket = 0;
 gameOver = false;
-shieldActive = false;
-rockets = 0;
+shieldActive = true;
+instance_create_layer(x, y, "Instances", oShield);
+rockets = 1;
