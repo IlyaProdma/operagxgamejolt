@@ -5,26 +5,26 @@ hY = y;
 hdist = point_distance(x, y, oShip.x, oShip.y);
 if(hdist <= 500)
 {
-	isActive = true;
+	isActiveh = true;
 	with (oShip) 
 	{
 		if(key_space)
 		{
-			spd = (currentSpeed - boost) * (500 - hdist) * 0.0045;
+			spdh = (currentSpeed - boost) * (500 - hdist) * 0.0045;
 		}
 		else
 		{
-			spd = currentSpeed * (500 - hdist) * 0.0045;
+			spdh = currentSpeed * (500 - hdist) * 0.0045;
 		}
-		move_towards_point(hX, hY, spd);
+		move_towards_point(hX, hY, spdh);
 	} 
 }
 else
 {
-	if(isActive)
+	if(isActiveh)
 		with (oShip) 
 	{
-		isActive = false;
+		isActiveh = false;
 		move_towards_point(hX, hY, 0);
 	}
 }
