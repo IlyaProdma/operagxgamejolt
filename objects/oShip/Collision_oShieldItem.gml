@@ -1,6 +1,11 @@
 /// @description Вставьте описание здесь
 // Вы можете записать свой код в этом редакторе
-instance_destroy();
-with(other)
+with (other)
+{
 	instance_destroy();
-oShip.shieldActive = false;
+}
+if (!shieldActive)
+{
+	instance_create_layer(x, y, "Instances", oShield);
+	shieldActive = true;
+}
