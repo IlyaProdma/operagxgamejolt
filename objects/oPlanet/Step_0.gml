@@ -10,11 +10,11 @@ if(dist <= 300)
 	{
 		if(key_space)
 		{
-			spd = (currentSpeed - boost) * (300 - dist) * 0.0035;
+			spd = (currentSpeed - boost) * (300 - dist) * oPlanet.coef;
 		}
 		else
 		{
-			spd = currentSpeed * (300 - dist) * 0.0035;
+			spd = currentSpeed * (300 - dist) * oPlanet.coef;
 		}
 		move_towards_point(oX, oY, spd);
 	} 
