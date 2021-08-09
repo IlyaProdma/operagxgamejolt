@@ -17,5 +17,43 @@ with (new_barrier)
 		instance_destroy();
 	}
 }
-alarm[0] = room_speed / shipObj.currentSpeed * 3;
+place_x = random_range(200, 400);
+place_y = random_range(room_height, room_height*1.5);
+new_barrier = instance_create_layer(shipObj.x + place_x, shipObj.y + place_y, "Barriers", oBarrier);
+with (new_barrier)
+{
+	tries = 0;
+	done = false;
+	do
+	{
+		tries += 1;
+		x += random_range(100, 200);
+		y = shipObj.y + random_range(room_height, room_height*1.5);
+		done = place_free(x, y);
+	} until(done or tries > 80);
+	if (not done)
+	{
+		instance_destroy();
+	}
+}
+place_x = random_range(200, 400);
+place_y = random_range(room_height, room_height*1.5);
+new_barrier = instance_create_layer(shipObj.x + place_x, shipObj.y - place_y, "Barriers", oBarrier);
+with (new_barrier)
+{
+	tries = 0;
+	done = false;
+	do
+	{
+		tries += 1;
+		x += random_range(100, 200);
+		y = shipObj.y - random_range(room_height, room_height*1.5);
+		done = place_free(x, y);
+	} until(done or tries > 80);
+	if (not done)
+	{
+		instance_destroy();
+	}
+}
+alarm[0] = room_speed / shipObj.currentSpeed;
 
