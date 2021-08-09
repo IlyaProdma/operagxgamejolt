@@ -60,7 +60,6 @@ if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0)
 	firingDelayRocket = 30; 
 	audio_play_sound(mRocket, 1000, false);
 	instance_create_layer(x, y, "Rockets", oRocket)
-
 }
 
 
