@@ -6,4 +6,6 @@ currentSpeed = 0;
 firingDelay = 0;
 firingDelayRocket = 0;
 gameOver = false;
+activeShield = true;
+surf = -1;
  
