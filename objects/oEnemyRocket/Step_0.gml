@@ -1,0 +1,1 @@
+if((oShip.x - x) > 1360) instance_destroy();
