@@ -10,11 +10,11 @@ if(hdist <= 500)
 	{
 		if(key_space && boostBar > 0)
 		{
-			spdh = (currentSpeed - boost) * (500 - hdist) * 0.0045;
+			spdh = (currentSpeed - boost) * (500 - hdist) * 0.0024 * oBlackHole.image_xscale;
 		}
 		else
 		{
-			spdh = currentSpeed * (500 - hdist) * 0.0045;
+			spdh = currentSpeed * (500 - hdist) * 0.0024 * oBlackHole.image_xscale;
 		}
 		move_towards_point(hX, hY, spdh);
 	} 

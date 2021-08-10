@@ -53,4 +53,4 @@ with (new_black_hole)
 		instance_destroy();
 	}
 }
-alarm[4] = room_speed / shipObj.currentSpeed * 100;
+alarm[4] = room_speed / shipObj.currentSpeed * 150;

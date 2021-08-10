@@ -21,4 +21,4 @@ with (new_item)
 	    instance_destroy();
 	}
 }
-alarm[3] = room_speed / shipObj.currentSpeed * 10;
+alarm[3] = room_speed / shipObj.currentSpeed * 20;
