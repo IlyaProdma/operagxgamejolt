@@ -1,6 +1,6 @@
 place_xh = 1400;
 place_yh = irandom_range(-1, 1)*irandom_range(0, 325)*2;
-new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y+place_yh, "BlackHoles", oBlackHole);
+new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y+place_yh, "Planets", oBlackHole);
 with (new_black_hole)
 {
 	triesh = 0;
@@ -17,7 +17,7 @@ with (new_black_hole)
 }
 place_xh = random_range(200, 400);
 place_yh = random_range(room_height, room_height*1.5);
-new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y+place_yh, "BlackHoles", oBlackHole);
+new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y+place_yh, "Planets", oBlackHole);
 with (new_black_hole)
 {
 	triesh = 0;
@@ -36,7 +36,7 @@ with (new_black_hole)
 }
 place_xh = random_range(200, 400);
 place_yh = random_range(room_height, room_height*1.5);
-new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y-place_yh, "BlackHoles", oBlackHole);
+new_black_hole = instance_create_layer(shipObj.x+place_xh, shipObj.y-place_yh, "Planets", oBlackHole);
 with (new_black_hole)
 {
 	triesh = 0;
@@ -53,4 +53,4 @@ with (new_black_hole)
 		instance_destroy();
 	}
 }
-alarm[4] = room_speed / shipObj.currentSpeed * 10;
+alarm[4] = room_speed / shipObj.currentSpeed * 100;

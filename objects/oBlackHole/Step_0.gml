@@ -28,3 +28,4 @@ else
 		move_towards_point(hX, hY, 0);
 	}
 }
+if(x - oShip.x < -500) instance_destroy();
