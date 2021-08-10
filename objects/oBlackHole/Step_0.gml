@@ -8,7 +8,7 @@ if(hdist <= 500)
 	isActiveh = true;
 	with (oShip) 
 	{
-		if(key_space)
+		if(key_space && boostBar > 0)
 		{
 			spdh = (currentSpeed - boost) * (500 - hdist) * 0.0045;
 		}

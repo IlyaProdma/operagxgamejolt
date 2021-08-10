@@ -1,10 +1,12 @@
 place_x = 1200;
 place_y = irandom_range(-1, 1)*irandom_range(0, 325)*2;
-choice = irandom_range(0, 1);
+choice = irandom_range(0, 2);
 if (choice == 0)
 	new_item = instance_create_layer(shipObj.x+place_x, shipObj.y+place_y, "Items", oShieldItem);
-else
+else if(choice == 1)
 	new_item = instance_create_layer(shipObj.x+place_x, shipObj.y+place_y, "Items", oRocketItem);
+else if (choice == 2)
+	new_item = instance_create_layer(shipObj.x+place_x, shipObj.y+place_y, "Items", oBoostItem)
 with (new_item)
 {
 	tries = 0;

@@ -11,7 +11,7 @@ firingDelayRocket -= 1;
 
 vsp = 5;
 x += currentSpeed;
-if(key_space)
+if(key_space && boostBar > 0)
 {
 	currentSpeed = constSpeed + boost;
 	vsp += boost/2.5;
@@ -25,7 +25,7 @@ move = key_up - key_down;
 if(move == 1)
 {
 	y -= vsp;
-	if (key_space)
+	if (key_space && boostBar > 0)
 		sprite_index = sShipBoostUpIdle;
 	else
 		sprite_index = sShipUpIdle;
@@ -33,7 +33,7 @@ if(move == 1)
 if(move == -1)
 {
 	y += vsp;
-	if (key_space)
+	if (key_space && boostBar > 0)
 		sprite_index = sShipBoostDownIdle;
 	else
 		sprite_index = sShipDownIdle;
@@ -41,7 +41,7 @@ if(move == -1)
 if(move == 0)
 {
 	sprite_index = sShipNormal;
-	if(key_space)
+	if(key_space && boostBar > 0)
 	{
 		currentSpeed = constSpeed + boost;
 		vsp += boost/2.5;
@@ -70,4 +70,9 @@ if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 	rockets--;
 }
 
-
+if(key_space && boostBar > 0)
+{
+	boostBar -= 2;
+}
+if(boostBar <= 0) boostBar = 0;
+if(boostBar > boostBar_max) boostBar = boostBar_max;
