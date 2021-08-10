@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.7,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "sound_effects",
     "path": "audiogroups/sound_effects",
   },
-  "soundFile": "mRocket.wav",
-  "duration": 0.374906,
+  "soundFile": "mBoost.wav",
+  "duration": 6.857143,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mRocket",
+  "name": "mBoost",
   "tags": [],
   "resourceType": "GMSound",
 }
