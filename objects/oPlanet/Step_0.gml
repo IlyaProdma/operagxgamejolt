@@ -3,7 +3,7 @@ oX = x;
 oY = y;
 
 if (instance_exists(oBlackHole) && point_distance(x, y, oBlackHole.x, oBlackHole.y) <= 500)
-	instance_destroy();
+	move_towards_point(oBlackHole.x, oBlackHole.y, 5);
 else
 {
 	dist = point_distance(x, y, oShip.x, oShip.y);
