@@ -1,3 +1,4 @@
+audio_stop_sound(mDeathTheme);
 audio_play_sound(mTheme, 1000, true);
 window_set_size(display_get_width(), display_get_height());
 surface_resize(application_surface, display_get_width(), display_get_height());
