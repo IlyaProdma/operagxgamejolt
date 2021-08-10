@@ -55,11 +55,12 @@ if(move == 0)
 
 shoot = key_enter - key_shift;
 
-if(((shoot == 1) || (shoot == 0 && key_enter)) && (firingDelay < 0))
+if(((shoot == 1) || (shoot == 0 && key_enter)) && (firingDelay < 0) && overheatBar>=10)
 {
 	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
 	instance_create_layer(x, y, "Bullets", oBullet)
+	overheatBar -= 10;
 }
 if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 {
@@ -76,3 +77,6 @@ if(key_space && boostBar > 0)
 }
 if(boostBar <= 0) boostBar = 0;
 if(boostBar > boostBar_max) boostBar = boostBar_max;
+
+if(overheatBar < 0 ) overheatBar = 0;
+if(overheatBar > overheatBar_max) overheatBar = overheatBar_max;
