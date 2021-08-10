@@ -1,7 +1,8 @@
-#macro RES_W 1366
-#macro RES_H 768
-
 audio_play_sound(mTheme, 1000, true);
+window_set_size(display_get_width(), display_get_height());
+surface_resize(application_surface, display_get_width(), display_get_height());
+room_height = window_get_height();
+room_width = window_get_width();
 score = 0;
 alarm[0] = room_speed * 0.5;
 alarm[1] = room_speed * 0.5;

@@ -1,2 +1,2 @@
-draw_text(1200, 20, "SCORE: " + string(score));
-draw_text(1200, 40, "ROCKETS: " + string(oShip.rockets));
+draw_text(room_width-150, 20, "SCORE: " + string(score));
+draw_text(room_width-150, 40, "ROCKETS: " + string(oShip.rockets));
