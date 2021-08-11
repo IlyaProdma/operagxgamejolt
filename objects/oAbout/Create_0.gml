@@ -12,16 +12,3 @@ menu_y = (gui_height - gui_margin) / 2 + 85 - 200;
 menu_y_target = gui_height / 2 + 85;
 menu_speed = 20;
 menu_fort = MenuFont;
-menu_item_height = font_get_size(MenuFont);
-menu_commited = -1;
-menu_control = true;
-
-menu[4] = "1 player ";
-menu[3] = "2 players";
-menu[2] = "Help";
-menu[1] = "Options"
-menu[0] = "About";
-
-menu_items = array_length_1d(menu);
-menu_cursor = 4;
-

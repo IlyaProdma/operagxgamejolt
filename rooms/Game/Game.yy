@@ -32,10 +32,10 @@
   "creationCodeFile": "${project_dir}/rooms/Room1/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_79D57BFD","path":"rooms/Room1/Room1.yy",},
-    {"name":"shipObj","path":"rooms/Room1/Room1.yy",},
-    {"name":"cameraObj","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_41664E16","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_79D57BFD","path":"rooms/Game/Game.yy",},
+    {"name":"shipObj","path":"rooms/Game/Game.yy",},
+    {"name":"cameraObj","path":"rooms/Game/Game.yy",},
+    {"name":"inst_41664E16","path":"rooms/Game/Game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -63,7 +63,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Room1",
+  "name": "Game",
   "tags": [],
   "resourceType": "GMRoom",
 }
