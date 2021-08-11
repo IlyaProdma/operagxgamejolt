@@ -16,7 +16,7 @@ with (new_item)
 		x += random_range(0, 200);
 	    y = shipObj.y+irandom_range(-1, 1)*irandom_range(0, room_height/2)*2*random_range(0.1, 0.8)/random_range(0.1, 0.8);
 		done = place_free(x, y);
-	} until(done or tries > 10);
+	} until(done or tries > 30);
 	if(not done) {
 	    instance_destroy();
 	}
