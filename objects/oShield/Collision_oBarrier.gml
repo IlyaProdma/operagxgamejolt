@@ -1,5 +1,10 @@
+hp = 0;
 audio_play_sound(mShieldCrack, 1000, false);
-instance_destroy();
+sprite_index = sShieldDestruction;
 with(other)
-	instance_destroy();
+{
+	object_index = oEmptyObj;
+	show_message(object_index);
+	hp = 0;
+}
 oShip.shieldActive = false;
