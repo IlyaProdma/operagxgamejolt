@@ -4,6 +4,8 @@
     {"id":{"name":"mEnemyDeath","path":"sounds/mEnemyDeath/mEnemyDeath.yy",},"order":8,},
     {"id":{"name":"About","path":"rooms/About/About.yy",},"order":3,},
     {"id":{"name":"sWaterPlanet","path":"sprites/sWaterPlanet/sWaterPlanet.yy",},"order":20,},
+    {"id":{"name":"Sprite46","path":"sprites/Sprite46/Sprite46.yy",},"order":14,},
+    {"id":{"name":"oShipMenu","path":"objects/oShipMenu/oShipMenu.yy",},"order":18,},
     {"id":{"name":"sShipBoostUpStart","path":"sprites/sShipBoostUpStart/sShipBoostUpStart.yy",},"order":13,},
     {"id":{"name":"sToxicPlanet","path":"sprites/sToxicPlanet/sToxicPlanet.yy",},"order":37,},
     {"id":{"name":"sBlackHole","path":"sprites/sBlackHole/sBlackHole.yy",},"order":38,},

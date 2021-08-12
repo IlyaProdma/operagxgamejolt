@@ -4,6 +4,9 @@
 //window_set_size(display_get_width(), display_get_height());
 //surface_resize(application_surface, display_get_width(), display_get_height());
 
+	audio_group_stop_all(sound_effects);
+	audio_stop_sound(mTheme);
+
 gui_height = display_get_gui_height();
 gui_width = display_get_gui_width();
 gui_margin = 32;

@@ -29,13 +29,13 @@ if(menu_control)
 		menu_y_target = gui_height / 2 + 85;
 		menu_commited = menu_cursor;
 		menu_control = false;
-		
+		audio_group_stop_all(sound_effects);
 		
 	switch(menu_commited)
 	{
 		case 3: default: room_goto(3); break;
 		case 0: room_goto(0); break;
-	}
+	};
 	}
 }
 

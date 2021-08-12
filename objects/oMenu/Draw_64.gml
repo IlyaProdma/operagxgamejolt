@@ -6,11 +6,20 @@ draw_set_valign(fa_bottom);
 
 for(var i = 0; i < menu_items; i++)
 {
+	switch(menu_cursor)
+	{
+		case 4: oShipMenu.sprite_xoffset = 500; oShipMenu.sprite_yoffset = 500; break;
+		case 3: break;
+		case 2: break;
+		case 1: break;
+		case 0: break;
+	};
+	
 	var offset = 2;
 	var txt = menu[i];
 	if(menu_cursor == i)
 	{
-		txt = string_insert("> ", txt, 0);
+		txt = string_insert(" ", txt, 0);
 		var col = c_white;
 	}
 	else
