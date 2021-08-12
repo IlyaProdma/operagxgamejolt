@@ -1,5 +1,3 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
 if (instance_exists(follow))
 {
 	viewy = lerp(viewy, follow.y, 0.025);

@@ -1,3 +1,3 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
-game_restart();
+Menu.menu_control = true;
+Menu.menu_commited = -1;
+room_goto(Menu);

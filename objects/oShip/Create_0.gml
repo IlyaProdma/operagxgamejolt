@@ -23,6 +23,4 @@ overheatBar_height = 20;
 overheatBar_x = 0;
 overheatBar_y = room_height * 0.8;
 
-survive = false;
-
 alarm[0] = room_speed;

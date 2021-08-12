@@ -1,7 +1,7 @@
 if (!gameOver)
 {
-	score = round(shipObj.x);
-	shipObj.constSpeed += 0.002;
+	score = round(oShip.x);
+	oShip.constSpeed += 0.002;
 }
 else
 {
@@ -10,5 +10,5 @@ else
 	audio_stop_sound(mTheme);
 	gameOver = false;
 	room_goto(GameOverRoom);
-	shipObj.x = 0;
+	oShip.x = 0;
 }

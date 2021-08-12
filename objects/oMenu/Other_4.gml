@@ -1,4 +1,7 @@
 audio_group_stop_all(sound_effects);
+audio_stop_sound(mDeathTheme);
+if (!audio_is_playing(mTheme))
+	audio_play_sound(mTheme, 1000, true);
 display_set_gui_size(display_get_width(), display_get_height());
 gui_height = display_get_gui_height();
 gui_width = display_get_gui_width();
@@ -20,4 +23,5 @@ menu[0] = "About";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 4;
+
 
