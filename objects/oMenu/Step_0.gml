@@ -29,8 +29,9 @@ if(menu_control)
 		
 		switch(menu_commited)
 		{
-			case 4: default: room_goto(Game); break;
+			case 4: room_goto(Game); break;
 			case 0: room_goto(About); break;
+			default: room_goto(Game); break;
 		};
 	}
 }

@@ -1,5 +1,3 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
 
 draw_set_font(MenuFont);
 draw_set_halign(fa_right);

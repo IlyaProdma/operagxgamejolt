@@ -1,9 +1,3 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
-
-//window_set_size(display_get_width(), display_get_height());
-//surface_resize(application_surface, display_get_width(), display_get_height());
-
 gui_height = display_get_gui_height();
 gui_width = display_get_gui_width();
 gui_margin = 32;
