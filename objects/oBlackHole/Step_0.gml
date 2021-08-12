@@ -17,7 +17,7 @@ if(hdist <= 500)
 			spdh = currentSpeed * (500 - hdist) * 0.0024 * oBlackHole.image_xscale;
 		}
 		move_towards_point(hX, hY, spdh);
-	} 
+	}
 }
 else
 {

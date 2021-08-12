@@ -23,3 +23,4 @@ menu[0] = "About";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 4;
+oMusic.themePitch = 1;
