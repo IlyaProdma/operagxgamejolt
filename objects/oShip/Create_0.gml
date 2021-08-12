@@ -6,7 +6,6 @@ firingDelay = 0;
 firingDelayRocket = 0;
 gameOver = false;
 shieldActive = true;
-instance_create_layer(x, y, "Instances", oShield);
 rockets = 1;
 
 boostBar = 500;

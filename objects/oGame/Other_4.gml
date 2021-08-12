@@ -11,3 +11,7 @@ alarm[2] = room_speed * 15;
 alarm[3] = room_speed * 5;
 alarm[4] = room_speed * 20;
 gameOver = false;
+instance_create_layer(x, y, "Instances", oShield);
+oShip.rockets = 1;
+oShip.boostBar = 500;
+oShip.overheatBar = 500;
