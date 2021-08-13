@@ -1,4 +1,7 @@
 audio_stop_sound(mDeathTheme);
+audio_group_stop_all(sound_effects);
+if (!audio_is_playing(mTheme))
+	audio_play_sound(mTheme, 1000, true);
 draw_set_font(asset_font);
 window_set_size(display_get_width(), display_get_height());
 surface_resize(application_surface, display_get_width(), display_get_height());

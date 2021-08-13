@@ -1,5 +1,6 @@
+/// @description Вставьте описание здесь
+// Вы можете записать свой код в этом редакторе
 audio_group_stop_all(sound_effects);
-audio_play_sound(mDeathTheme, 1000, true);
 display_set_gui_size(display_get_width(), display_get_height());
 gui_height = display_get_gui_height();
 gui_width = display_get_gui_width();
@@ -13,7 +14,7 @@ menu_item_height = font_get_size(MenuFont);
 menu_commited = -1;
 menu_control = true;
 
-menu[1] = "Again";
+menu[1] = "Agaih";
 menu[0] = "Menu";
 
 

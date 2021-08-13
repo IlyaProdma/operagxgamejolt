@@ -1,3 +1,5 @@
+/// @description Вставьте описание здесь
+// Вы можете записать свой код в этом редакторе
 menu_y += (menu_y_target - menu_y) / menu_speed;
 
 if(!sound)
@@ -31,10 +33,8 @@ if(menu_control)
 		
 		switch(menu_commited)
 		{
-			case 4: room_goto(Game); break;
-			case 2: room_goto(Help); break;
-			case 1: if(global.sound) {menu[1] = "Sound:off"; global.sound = false; break;} if(!global.sound) {menu[1] = "Sound:on"; global.sound = true; break;} break;
-			case 0: room_goto(About); break;
+			case 1: room_goto(Game); break;
+			case 0: room_goto(Menu); break;
 		};
 		
 		//menu_control = false;

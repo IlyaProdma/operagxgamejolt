@@ -18,7 +18,14 @@ menu_control = true;
 menu[4] = "1 player ";
 menu[3] = "2 players";
 menu[2] = "Help";
-menu[1] = "Options"
+if(global.sound)
+{
+menu[1] = "Sound:on";
+}
+else
+{
+menu[1] = "Sound:off";
+}
 menu[0] = "About";
 
 menu_items = array_length_1d(menu);
