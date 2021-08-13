@@ -11,7 +11,7 @@ rockets = 1;
 boostBar = 212;
 boostBar_max = 212;
 boostBar_width = 212;
-boostBar_height = 18;
+boostBar_height = 19;
 boostBar_x = 220;
 boostBar_y = room_height * 0.9;
 

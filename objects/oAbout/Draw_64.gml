@@ -10,7 +10,7 @@ draw_text(menu_x - 600, menu_y - 300, "LastCucumber");
 draw_text(menu_x - 600, menu_y - 250, "Pondoxva");
 draw_text(menu_x - 600, menu_y - 200, "HtWwiY");
 draw_text(menu_x - 600, menu_y - 100, "Artist:");
-draw_text(menu_x - 600, menu_y - 50, "Boca Legend");
+draw_text(menu_x - 600, menu_y - 50, "boca_legend");
 draw_text(menu_x - 600, menu_y + 50, "Sound designer:");
 draw_text(menu_x - 600, menu_y + 100, "MDGRAYD");
 
