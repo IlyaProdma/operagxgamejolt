@@ -36,7 +36,7 @@ else
 }
 
 move = key_up - key_down;
-if ( move == 1 && y > -400 + sprite_height)
+if ( move == 1 && ( (y > -400 + sprite_height && global.multiplayer) || !global.multiplayer))
 {
 		y -= vsp;
 		if ( (key_boost || boostActivated) && boostBar > 0)
@@ -46,11 +46,11 @@ if ( move == 1 && y > -400 + sprite_height)
 		else
 			sprite_index = sShipUpIdle;
 }
-if (y <= -380 + sprite_height || y >= 380 - sprite_height)
+if (global.multiplayer && (y <= -380 + sprite_height || y >= 380 - sprite_height))
 	nearBorder = true;
 else
 	nearBorder = false;
-if ( move == -1 && y < 400 - sprite_height)
+if ( move == -1 && ( (y < 400 - sprite_height && global.multiplayer) || !global.multiplayer))
 {
 	y += vsp;
 	if ( (key_boost || boostActivated) && boostBar > 0)
