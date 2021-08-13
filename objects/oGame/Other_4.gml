@@ -51,3 +51,6 @@ oShip.boostBar = 500;
 oShip.overheatBar = 0;
 alarm[5] = 0;
 alarm[6] = 15;
+
+instance_destroy(oCamera);
+instance_create_layer(0, 0, "Instances", oCamera);
