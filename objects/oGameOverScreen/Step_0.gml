@@ -1,3 +1,6 @@
+key_w = keyboard_check_pressed(ord("W"));
+key_s = keyboard_check_pressed(ord("S"));
+
 menu_y += (menu_y_target - menu_y) / menu_speed;
 
 if(!sound)
@@ -5,7 +8,7 @@ if(!sound)
 
 if(menu_control)
 {
-	if(keyboard_check_pressed(vk_up))
+	if(keyboard_check_pressed(vk_up) || key_w)
 	{
 		menu_cursor++;
 		audio_play_sound(mMenuKeyClick, 1000, false);
@@ -14,7 +17,7 @@ if(menu_control)
 			menu_cursor = 0;
 		}
 	}
-	if(keyboard_check_pressed(vk_down))
+	if(keyboard_check_pressed(vk_down) || key_s)
 	{
 		menu_cursor--;
 		audio_play_sound(mMenuKeyClick, 1000, false);
@@ -34,7 +37,6 @@ if(menu_control)
 			case 1: room_goto(Game); break;
 			case 0: room_goto(Menu); break;
 		};
-		
-		//menu_control = false;
+
 	}
 }

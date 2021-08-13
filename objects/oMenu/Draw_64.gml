@@ -29,11 +29,11 @@ for(var i = 0; i < menu_items; i++)
 	
 	switch(menu_cursor)
 	{
-		case 4: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 5 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 3: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 4 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 2: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 3 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 1: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 2 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 0: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 1 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 4: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 5 * 2) + 10; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 3: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 4 * 2) + 10; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 2: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 3 * 2) + 10; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 1: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 2 * 2) + 10; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 0: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 1 * 2) + 10; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
 	};
 	
 }

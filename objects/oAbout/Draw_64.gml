@@ -13,5 +13,4 @@ draw_text(menu_x - 600, menu_y - 100, "Artist:");
 draw_text(menu_x - 600, menu_y - 50, "Boca Legend");
 draw_text(menu_x - 600, menu_y + 50, "Sound designer:");
 draw_text(menu_x - 600, menu_y + 100, "MDGRAYD");
-draw_text(menu_x - 600 + 580, menu_y + 260, "By Tumbleweed Team");
 
