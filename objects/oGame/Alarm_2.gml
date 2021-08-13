@@ -1,4 +1,4 @@
-place_x = room_width*0.8;
+place_x = room_width*0.7;
 place_y = irandom_range(-1, 1)*random_range(0, 350);
 if (!global.multiplayer)
 	instance_create_layer(oShip.x+place_x, oShip.y + place_y, "Enemies", oEnemy);
