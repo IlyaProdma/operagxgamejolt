@@ -15,7 +15,7 @@ boostBar_height = 18;
 boostBar_x = 0;
 boostBar_y = room_height * 0.9;
 
-overheatBar = 224;
+overheatBar = 0;
 overheatBar_max = 224;
 overheatBar_width = 224;
 overheatBar_height = 18;

@@ -30,4 +30,4 @@ oShip.constSpeed = 5;
 oShip.vsp = 0;
 oShip.rockets = 1;
 oShip.boostBar = 500;
-oShip.overheatBar = 500;
+oShip.overheatBar = 0;
