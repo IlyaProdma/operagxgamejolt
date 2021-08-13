@@ -3,8 +3,8 @@ if (!gameOver)
 	if (instance_exists(oShip))
 	{
 		score = round(oShip.x);
-		if (score > high_score)
-			high_score = score;
+		if (score > global.high_score)
+			global.high_score = score;
 		oShip.constSpeed += 0.002;
 		if (instance_exists(oShip2))
 		{

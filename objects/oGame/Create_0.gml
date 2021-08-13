@@ -8,7 +8,7 @@ surface_resize(application_surface, display_get_width(), display_get_height());
 room_height = window_get_height();
 room_width = window_get_width();
 score = 0;
-high_score = 0;
+global.high_score = 0;
 alarm[0] = room_speed * 0.5;
 alarm[1] = room_speed * 0.5;
 alarm[2] = room_speed * 15;

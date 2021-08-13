@@ -32,3 +32,5 @@ for(var i = 0; i < menu_items; i++)
 	draw_text(xx, yy, txt)
 	
 }
+draw_text(room_width-330, 60, "HIGH SCORE: " + string(global.high_score));
+draw_text(room_width-270, 100, "SCORE: " + string(score));

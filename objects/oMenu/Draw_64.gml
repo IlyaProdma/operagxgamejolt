@@ -40,3 +40,5 @@ for(var i = 0; i < menu_items; i++)
 
 draw_set_color(c_white);
 draw_text(menu_x + 400, menu_y + 260, "By Tumbleweed Team");
+if(global.high_score)
+	draw_text(room_width-330, 60, "HIGH SCORE: " + string(global.high_score));
