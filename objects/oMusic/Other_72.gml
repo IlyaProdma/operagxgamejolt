@@ -1,1 +1,0 @@
-audio_play_sound(mTheme, 1000, true);

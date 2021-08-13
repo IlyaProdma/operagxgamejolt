@@ -1,4 +1,8 @@
 audio_group_stop_all(sound_effects);
+audio_stop_sound(mDeathTheme);
+audio_stop_sound(mTheme);
+if (!audio_is_playing(mMenuTheme))
+	audio_play_sound(mMenuTheme, 1000, true);
 display_set_gui_size(display_get_width(), display_get_height());
 gui_height = display_get_gui_height();
 gui_width = display_get_gui_width();
@@ -19,11 +23,11 @@ menu[3] = "2 players";
 menu[2] = "Help";
 if(global.sound)
 {
-menu[1] = "Sound:on";
+	menu[1] = "Sound:on";
 }
 else
 {
-menu[1] = "Sound:off";
+	menu[1] = "Sound:off";
 }
 menu[0] = "About";
 

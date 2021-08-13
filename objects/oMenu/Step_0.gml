@@ -35,7 +35,19 @@ if(menu_control)
 		{
 			case 4: room_goto(Game); break;
 			case 2: room_goto(Help); break;
-			case 1: if(global.sound) {menu[1] = "Sound:off"; global.sound = false; break;} if(!global.sound) {menu[1] = "Sound:on"; global.sound = true; break;} break;
+			case 1: if(global.sound) {
+						menu[1] = "Sound:off"; 
+						global.sound = false;
+						audio_master_gain(0);
+						break;
+						} 
+					else			 {
+						menu[1] = "Sound:on"; 
+						global.sound = true;
+						audio_master_gain(1);
+						break;
+						} 
+					break;
 			case 0: room_goto(About); break;
 		menu_control = false;
 		switch(menu_commited)

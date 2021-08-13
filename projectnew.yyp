@@ -18,6 +18,7 @@
     {"id":{"name":"sShipBoostUpIdle2","path":"sprites/sShipBoostUpIdle2/sShipBoostUpIdle2.yy",},"order":51,},
     {"id":{"name":"sShipBoost2","path":"sprites/sShipBoost2/sShipBoost2.yy",},"order":53,},
     {"id":{"name":"sShipUpIdle2","path":"sprites/sShipUpIdle2/sShipUpIdle2.yy",},"order":49,},
+    {"id":{"name":"mMenuTheme","path":"sounds/mMenuTheme/mMenuTheme.yy",},"order":12,},
     {"id":{"name":"sAsteroid4","path":"sprites/sAsteroid4/sAsteroid4.yy",},"order":27,},
     {"id":{"name":"oShield","path":"objects/oShield/oShield.yy",},"order":11,},
     {"id":{"name":"sRedWaterPlanet","path":"sprites/sRedWaterPlanet/sRedWaterPlanet.yy",},"order":40,},

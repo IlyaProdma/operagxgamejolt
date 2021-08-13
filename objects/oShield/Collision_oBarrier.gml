@@ -5,4 +5,3 @@ with(other)
 {
 	hp = 0;
 }
-oShip.shieldActive = false;

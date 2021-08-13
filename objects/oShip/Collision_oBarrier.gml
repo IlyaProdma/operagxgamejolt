@@ -1,2 +1,5 @@
-sprite_index = sShipDestroy;
-oGame.gameOver = true;
+if (!shieldActive)
+{
+	sprite_index = sShipDestroy;
+	oGame.gameOver = true;
+}
