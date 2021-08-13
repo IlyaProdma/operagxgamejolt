@@ -4,8 +4,6 @@ audio_group_stop_all(sound_effects);
 if (!audio_is_playing(mTheme))
 	audio_play_sound(mTheme, 1000, true);
 draw_set_font(asset_font);
-window_set_size(display_get_width(), display_get_height());
-surface_resize(application_surface, display_get_width(), display_get_height());
 room_height = window_get_height();
 room_width = window_get_width();
 score = 0;
@@ -55,5 +53,7 @@ alarm[5] = 0;
 alarm[6] = 15;
 if (!global.multiplayer)
 	alarm[4] = room_speed * 20;
+else
+	alarm[4] = 0;
 instance_destroy(oCamera);
 instance_create_layer(0, 0, "Instances", oCamera);
