@@ -1,9 +1,17 @@
 if (!gameOver)
 {
-	score = round(oShip.x);
-	if (score > high_score)
-		high_score = score;
-	oShip.constSpeed += 0.002;
+	if (instance_exists(oShip))
+	{
+		score = round(oShip.x);
+		if (score > high_score)
+			high_score = score;
+		oShip.constSpeed += 0.002;
+		if (instance_exists(oShip2))
+		{
+			oShip2.constSpeed += 0.002;
+		}
+	}
+	
 }
 else
 {
@@ -12,5 +20,4 @@ else
 	audio_stop_sound(mTheme);
 	gameOver = false;
 	room_goto(GameOverRoom);
-	oShip.x = 0;
 }

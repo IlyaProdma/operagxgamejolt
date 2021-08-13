@@ -5,6 +5,6 @@ with (other)
 if (!shieldActive)
 {
 	audio_play_sound(mItemPickup, 1000, false);
-	instance_create_layer(x, y, "Instances", oShield);
+	shield2 = instance_create_layer(x+5, y, "Shields", oShield);
 	shieldActive = true;
 }

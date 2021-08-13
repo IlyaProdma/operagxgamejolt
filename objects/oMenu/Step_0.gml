@@ -31,7 +31,8 @@ if(menu_control)
 		
 		switch(menu_commited)
 		{
-			case 4: room_goto(Game); break;
+			case 4: global.multiplayer = false; room_goto(Game); break;
+			case 3: global.multiplayer = true; room_goto(Game); break;
 			case 2: room_goto(Help); break;
 			case 1: if(menu[1] == "Sound:on") {
 						menu[1] = "Sound:off"; 
@@ -44,19 +45,12 @@ if(menu_control)
 						break;
 						} 
 					break;
-			case 0: room_goto(About); break;
-		menu_control = false;
-		switch(menu_commited)
-		{
-			case 4: room_goto(Game); break;
 			case 0: 
 				audio_play_sound(mMenuKeyClick, 1000, false);
 				room_goto(About);
 				break;
-			default: room_goto(Game); break;
-		};
 		
-		//menu_control = false;
+		menu_control = false;
+		}
 	}
-}
 }

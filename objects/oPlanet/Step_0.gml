@@ -32,5 +32,34 @@ else
 			move_towards_point(oX, oY, 0);
 		}
 	}
+	if (instance_exists(oShip2))
+	{
+		dist = point_distance(x, y, oShip2.x, oShip2.y);
+		if(dist <= 300)
+		{
+			isActive = true;
+			with (oShip2) 
+			{
+				if(key_boost && boostBar > 0)
+				{
+					spd = (currentSpeed - boost) * (300 - dist) * oPlanet.coef;
+				}
+				else
+				{
+					spd = currentSpeed * (300 - dist) * oPlanet.coef;
+				}
+				move_towards_point(oX, oY, spd);
+			} 
+		}
+		else
+		{
+			if(isActive)
+				with (oShip2)
+				{
+					isActive = false;
+					move_towards_point(oX, oY, 0);
+				}
+		}
+	}
 	if(x - oShip.x < -500) instance_destroy();
 }
