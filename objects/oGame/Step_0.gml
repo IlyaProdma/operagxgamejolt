@@ -8,6 +8,11 @@ if (!gameOver)
 				oCamera.follow = oShip;
 			else
 				oCamera.follow = oShip2;
+			
+			if (oShip.x - oShip2.x > 800)
+				oShip.x = oShip2.x;
+			if (oShip2.x - oShip.x > 800)
+				oShip2.x = oShip.x;
 		}
 		score = round(oShip.x);
 		if (score > global.high_score)
