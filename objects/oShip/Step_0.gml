@@ -11,39 +11,49 @@ firingDelayRocket -= 1;
 
 vsp = 5;
 x += currentSpeed;
-if(key_boost && boostBar > 0)
+if( (key_boost) && boostBar > 0)
 {
 	if (!audio_is_playing(mBoost))
 		audio_play_sound(mBoost, 1000, true);
 	currentSpeed = constSpeed + boost;
 	vsp += boost/2.5;
 	sprite_index = sShipBoost;
+	if (global.multiplayer)
+		with (oShip2)
+		{
+			boostActivated = true;
+			currentSpeed = constSpeed + boost;
+			vsp += boost/2.5
+		}
 }
 else
 {
 	audio_stop_sound(mBoost);
 	currentSpeed = constSpeed;
+	if (global.multiplayer)
+		with (oShip2)
+			boostActivated = false;
 }
 
 move = key_up - key_down;
-if ( move == 1 && ( (y > -400 + sprite_height && global.multiplayer) ||  !global.multiplayer) )
+if ( move == 1 && y > -400 + sprite_height)
 {
 		y -= vsp;
-		if (key_boost && boostBar > 0)
+		if ( (key_boost || boostActivated) && boostBar > 0)
 		{
 			sprite_index = sShipBoostUpIdle;
 		}
 		else
 			sprite_index = sShipUpIdle;
 }
-if (y <= -380 + sprite_height || y >= 380 - sprite_height && global.multiplayer)
+if (y <= -380 + sprite_height || y >= 380 - sprite_height)
 	nearBorder = true;
 else
 	nearBorder = false;
-if ( move == -1 && ( (y < 400 - sprite_height && global.multiplayer) ||  !global.multiplayer) )
+if ( move == -1 && y < 400 - sprite_height)
 {
 	y += vsp;
-	if (key_boost && boostBar > 0)
+	if ( (key_boost || boostActivated) && boostBar > 0)
 		sprite_index = sShipBoostDownIdle;
 	else
 		sprite_index = sShipDownIdle;
@@ -51,7 +61,7 @@ if ( move == -1 && ( (y < 400 - sprite_height && global.multiplayer) ||  !global
 if(move == 0)
 {
 	sprite_index = sShipNormal;
-	if(key_boost && boostBar > 0)
+	if( (key_boost || boostActivated) && boostBar > 0)
 	{
 		currentSpeed = constSpeed + boost;
 		vsp += boost/2.5;
@@ -96,7 +106,7 @@ if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 	rockets--;
 }
 
-if(key_boost && boostBar > 0)
+if( (key_boost || boostActivated) && boostBar > 0)
 {
 	boostBar -= 1;
 }

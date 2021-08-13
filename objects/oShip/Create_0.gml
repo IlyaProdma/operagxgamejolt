@@ -24,6 +24,7 @@ overheatBar_y = room_height * 0.8;
 
 shield = instance_create_layer(x + 5, y, "Shields", oShield);
 nearBorder = false;
+boostActivated = false;
 
 alarm[0] = room_speed;
 alarm[1] = room_speed;
