@@ -8,17 +8,17 @@ gameOver = false;
 shieldActive = true;
 rockets = 1;
 
-boostBar = 500;
-boostBar_max = 500;
-boostBar_width = 500;
-boostBar_height = 20;
+boostBar = 212;
+boostBar_max = 212;
+boostBar_width = 212;
+boostBar_height = 18;
 boostBar_x = 0;
 boostBar_y = room_height * 0.9;
 
-overheatBar = 500;
-overheatBar_max = 500;
-overheatBar_width = 500;
-overheatBar_height = 20;
+overheatBar = 0;
+overheatBar_max = 224;
+overheatBar_width = 224;
+overheatBar_height = 18;
 overheatBar_x = 0;
 overheatBar_y = room_height * 0.8;
 

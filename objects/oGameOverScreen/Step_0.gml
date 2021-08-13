@@ -10,7 +10,8 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_up))
 	{
 		menu_cursor++;
-		
+		if(global.sound)
+		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor >= menu_items)
 		{
 			menu_cursor = 0;
@@ -19,7 +20,8 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_down))
 	{
 		menu_cursor--;
-		
+		if(global.sound)
+		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor < 0)
 		{
 			menu_cursor = menu_items - 1;

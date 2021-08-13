@@ -12,7 +12,7 @@ else
 		isActive = true;
 		with (oShip) 
 		{
-			if(key_space && boostBar > 0)
+			if(key_boost && boostBar > 0)
 			{
 				spd = (currentSpeed - boost) * (300 - dist) * oPlanet.coef;
 			}

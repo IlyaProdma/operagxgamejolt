@@ -38,4 +38,4 @@ for(var i = 0; i < menu_items; i++)
 }
 
 draw_set_color(c_white);
-draw_text(menu_x + 580, menu_y + 260, "By Tumbleweed Team");
+draw_text(menu_x + 400, menu_y + 260, "By Tumbleweed Team");

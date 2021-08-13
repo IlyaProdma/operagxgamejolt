@@ -1,6 +1,8 @@
 if (!gameOver)
 {
 	score = round(oShip.x);
+	if (score > high_score)
+		high_score = score;
 	oShip.constSpeed += 0.002;
 }
 else

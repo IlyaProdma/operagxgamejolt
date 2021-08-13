@@ -21,6 +21,7 @@
     {"id":{"name":"sAsteroid4","path":"sprites/sAsteroid4/sAsteroid4.yy",},"order":27,},
     {"id":{"name":"oShield","path":"objects/oShield/oShield.yy",},"order":11,},
     {"id":{"name":"sRedWaterPlanet","path":"sprites/sRedWaterPlanet/sRedWaterPlanet.yy",},"order":40,},
+    {"id":{"name":"mMenuKeyClick","path":"sounds/mMenuKeyClick/mMenuKeyClick.yy",},"order":11,},
     {"id":{"name":"sAsteroidDestruction","path":"sprites/sAsteroidDestruction/sAsteroidDestruction.yy",},"order":57,},
     {"id":{"name":"mBoost","path":"sounds/mBoost/mBoost.yy",},"order":4,},
     {"id":{"name":"sAsteroid2","path":"sprites/sAsteroid2/sAsteroid2.yy",},"order":25,},

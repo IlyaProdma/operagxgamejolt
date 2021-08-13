@@ -1,8 +1,8 @@
-key_up = keyboard_check(vk_up);
-key_down = keyboard_check(vk_down);
-key_space = keyboard_check(vk_space);
-key_enter = keyboard_check(vk_enter);
-key_shift = keyboard_check(vk_shift);
+key_up = keyboard_check(ord("W"));
+key_down = keyboard_check(ord("S"));
+key_boost = keyboard_check(ord("Q"));
+key_shoot = keyboard_check(ord("E"));
+key_rocket = keyboard_check(ord("R"));
 sprite_index = sShipNormal;
 
 
@@ -11,7 +11,7 @@ firingDelayRocket -= 1;
 
 vsp = 5;
 x += currentSpeed;
-if(key_space && boostBar > 0)
+if(key_boost && boostBar > 0)
 {
 	if (!audio_is_playing(mBoost))
 		audio_play_sound(mBoost, 1000, true);
@@ -28,7 +28,7 @@ move = key_up - key_down;
 if(move == 1)
 {
 	y -= vsp;
-	if (key_space && boostBar > 0)
+	if (key_boost && boostBar > 0)
 		sprite_index = sShipBoostUpIdle;
 	else
 		sprite_index = sShipUpIdle;
@@ -36,7 +36,7 @@ if(move == 1)
 if(move == -1)
 {
 	y += vsp;
-	if (key_space && boostBar > 0)
+	if (key_boost && boostBar > 0)
 		sprite_index = sShipBoostDownIdle;
 	else
 		sprite_index = sShipDownIdle;
@@ -44,7 +44,7 @@ if(move == -1)
 if(move == 0)
 {
 	sprite_index = sShipNormal;
-	if(key_space && boostBar > 0)
+	if(key_boost && boostBar > 0)
 	{
 		currentSpeed = constSpeed + boost;
 		vsp += boost/2.5;
@@ -56,14 +56,14 @@ if(move == 0)
 	}
 }
 
-shoot = key_enter - key_shift;
+shoot = key_shoot - key_rocket;
 
-if(((shoot == 1) || (shoot == 0 && key_enter)) && (firingDelay < 0) && overheatBar>=10)
+if(((shoot == 1) || (shoot == 0 && key_shoot)) && (firingDelay < 0) && overheatBar < overheatBar_max)
 {
 	firingDelay = 12; 
 	audio_play_sound(mShooting, 1000, false);
 	instance_create_layer(x, y, "Bullets", oBullet)
-	overheatBar -= 10;
+	overheatBar += 10;
 }
 if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 {
@@ -74,9 +74,9 @@ if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 	rockets--;
 }
 
-if(key_space && boostBar > 0)
+if(key_boost && boostBar > 0)
 {
-	boostBar -= 2;
+	boostBar -= 1;
 }
 if(boostBar <= 0) boostBar = 0;
 if(boostBar > boostBar_max) boostBar = boostBar_max;
