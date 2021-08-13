@@ -13,8 +13,6 @@ alarm[0] = room_speed * 0.5;
 alarm[1] = room_speed * 0.5;
 alarm[2] = room_speed * 15;
 alarm[3] = room_speed * 5;
-if (!global.multiplayer)
-	alarm[4] = room_speed * 20;
 gameOver = false;
 instance_destroy(oPlanet);
 instance_destroy(oBarrier);
@@ -55,6 +53,7 @@ oShip.boostBar = 500;
 oShip.overheatBar = 0;
 alarm[5] = 0;
 alarm[6] = 15;
-
+if (!global.multiplayer)
+	alarm[4] = room_speed * 20;
 instance_destroy(oCamera);
 instance_create_layer(0, 0, "Instances", oCamera);

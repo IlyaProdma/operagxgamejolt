@@ -62,4 +62,5 @@ if (!global.multiplayer)
 		}
 	}
 }
-alarm[4] = room_speed / oShip.currentSpeed * 150;
+if (!global.multiplayer)
+	alarm[4] = room_speed / oShip.currentSpeed * 150;
