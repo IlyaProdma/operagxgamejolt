@@ -2,6 +2,13 @@ if (!gameOver)
 {
 	if (instance_exists(oShip))
 	{
+		if (global.multiplayer)
+		{
+			if (oShip.x <= oShip2.x)
+				oCamera.follow = oShip;
+			else
+				oCamera.follow = oShip2;
+		}
 		score = round(oShip.x);
 		if (score > global.high_score)
 			global.high_score = score;

@@ -32,7 +32,7 @@ else
 			}
 		isActive = false;
 	}
-	/*if (instance_exists(oShip2))
+	if (instance_exists(oShip2))
 	{
 		dist = point_distance(x, y, oShip2.x, oShip2.y);
 		if(dist <= 300 && !oShip2.nearBorder)
@@ -60,6 +60,6 @@ else
 				}
 			isActive = false;
 		}
-	}*/
+	}
 	if(x - oShip.x < -500) instance_destroy();
 }
