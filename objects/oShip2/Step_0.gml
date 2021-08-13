@@ -11,7 +11,7 @@ firingDelayRocket -= 1;
 
 vsp = 5;
 x += currentSpeed;
-if( (key_boost) && boostBar > 0)
+if( (key_boost) && oShip.boostBar > 0)
 {
 	if (!audio_is_playing(mBoost))
 		audio_play_sound(mBoost, 1000, true);
@@ -37,7 +37,7 @@ move = key_up - key_down;
 if ( move == 1 && y > -400 + sprite_height)
 {
 		y -= vsp;
-		if ( (key_boost || boostActivated) && boostBar > 0)
+		if ( (key_boost || boostActivated) && oShip.boostBar > 0)
 		{
 			sprite_index = sShipBoostUpIdle2;
 		}
@@ -51,7 +51,7 @@ else
 if ( move == -1 && y < 400 - sprite_height)
 {
 	y += vsp;
-	if ( (key_boost || boostActivated) && boostBar > 0)
+	if ( (key_boost || boostActivated) && oShip.boostBar > 0)
 		sprite_index = sShipBoostDownIdle2;
 	else
 		sprite_index = sShipDownIdle2;
@@ -59,7 +59,7 @@ if ( move == -1 && y < 400 - sprite_height)
 if(move == 0)
 {
 	sprite_index = sShipNormal2;
-	if( (key_boost || boostActivated) && boostBar > 0)
+	if( (key_boost || boostActivated) && oShip.boostBar > 0)
 	{
 		currentSpeed = constSpeed + boost;
 		vsp += boost/2.5;
@@ -70,8 +70,7 @@ if(move == 0)
 		currentSpeed = constSpeed;
 	}
 }
-if(canshoot)
-	shoot = key_shoot - key_rocket;
+shoot = key_shoot - key_rocket;
 
 if(((shoot == 1) || (shoot == 0 && key_shoot)) && (firingDelay < 0) && overheatBar < overheatBar_max)
 {
@@ -104,12 +103,12 @@ if((shoot == -1) && (firingDelayRocket < 0) && firingDelay < 0) && (rockets > 0)
 	rockets--;
 }
 
-if( (key_boost || boostActivated) && boostBar > 0)
+if( (key_boost || boostActivated) && oShip.boostBar > 0)
 {
-	boostBar -= 1;
+	oShip.boostBar -= 1;
 }
-if(boostBar <= 0) boostBar = 0;
-if(boostBar > boostBar_max) boostBar = boostBar_max;
+if(oShip.boostBar <= 0) oShip.boostBar = 0;
+if(oShip.boostBar > oShip.boostBar_max) oShip.boostBar = oShip.boostBar_max;
 
 if(overheatBar < 0 ) overheatBar = 0;
 if(overheatBar > overheatBar_max) overheatBar = overheatBar_max;

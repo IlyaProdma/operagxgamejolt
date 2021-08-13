@@ -3,8 +3,6 @@ audio_stop_sound(mMenuTheme);
 audio_group_stop_all(sound_effects);
 audio_play_sound(mTheme, 1000, true);
 draw_set_font(asset_font);
-window_set_size(display_get_width(), display_get_height());
-surface_resize(application_surface, display_get_width(), display_get_height());
 room_height = window_get_height();
 room_width = window_get_width();
 score = 0;

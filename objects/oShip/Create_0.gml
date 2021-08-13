@@ -8,9 +8,18 @@ gameOver = false;
 shieldActive = true;
 rockets = 1;
 
-boostBar = 212;
-boostBar_max = 212;
-boostBar_width = 212;
+if (!global.multiplayer)
+{
+	boostBar = 212;
+	boostBar_max = 212;
+	boostBar_width = 212;
+}
+else
+{
+	boostBar = 450;
+	boostBar_max = 450;
+	boostBar_width = 450;
+}
 boostBar_height = 19;
 boostBar_x = 0;
 boostBar_y = room_height * 0.9;
