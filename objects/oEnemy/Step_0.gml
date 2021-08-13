@@ -11,5 +11,11 @@ if(score % 100 == 0)
 {
 	currentDirection = irandom_range(-1,1);
 }
-
-y += currentDirection * vsp;
+if ( currentDirection == 1 && ( (y > -400 + sprite_height && global.multiplayer) || (!global.multiplayer && y > oShip.y - 400 + sprite_height) ))
+{
+		y -= vsp;
+}
+if ( currentDirection == -1 && ( (y < 400 - sprite_height && global.multiplayer) ||  (!global.multiplayer && y < oShip.y + 400 - sprite_height)))
+{
+	y += vsp;
+}

@@ -59,4 +59,4 @@ if (instance_exists(oShip2))
 		isActiveh2 = false;
 	}
 }
-if(x - oShip.x < -500 || x - oShip2.x < -500) instance_destroy();
+if(x - oShip.x < -500 || (instance_exists(oShip2) && x - oShip2.x < -500) ) instance_destroy();

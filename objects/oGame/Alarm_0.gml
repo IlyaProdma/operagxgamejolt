@@ -2,7 +2,7 @@ place_x = room_width;
 if (!global.multiplayer)
 	place_y = oShip.y + irandom_range(-1, 1)*irandom_range(0, room_height/2)*2;
 else
-	place_y = irandom_range(-1, 1)*irandom_range(0, 370);
+	place_y = irandom_range(-1, 1)*irandom_range(0, 350);
 new_barrier = instance_create_layer(oShip.x+place_x, oShip.y+place_y, "Barriers", oBarrier);
 with (new_barrier)
 {
@@ -15,7 +15,7 @@ with (new_barrier)
 		if (!global.multiplayer)
 			y = oShip.y+irandom_range(-1, 1)*irandom_range(0, room_height/2)*2*random_range(0.1, 0.8)/random_range(0.1, 0.8);
 		else
-			y = irandom_range(-1, 1)*random_range(0, 370);
+			y = irandom_range(-1, 1)*random_range(0, 350);
 		done = place_free(x, y);
 	} until(done or tries > 80);
 	if (not done)
@@ -67,5 +67,5 @@ if (!global.multiplayer)
 if (!global.multiplayer)
 	alarm[0] = room_speed / oShip.currentSpeed;
 else
-	alarm[0] = room_speed / oShip.currentSpeed * 10;
+	alarm[0] = room_speed / oShip.currentSpeed * 5;
 

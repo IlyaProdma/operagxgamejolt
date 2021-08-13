@@ -37,13 +37,15 @@ if(menu_control)
 			case 4: global.multiplayer = false; room_goto(Game); break;
 			case 3: global.multiplayer = true; room_goto(Game); break;
 			case 2: room_goto(Help); break;
-			case 1: if(menu[1] == "Sound:on") {
+			case 1: if(soundOn) {
 						menu[1] = "Sound:off"; 
 						audio_master_gain(0);
+						soundOn = false;
 						break;
 						} 
 					else			 {
 						menu[1] = "Sound:on"; 
+						soundOn = true;
 						audio_master_gain(1);
 						break;
 						} 

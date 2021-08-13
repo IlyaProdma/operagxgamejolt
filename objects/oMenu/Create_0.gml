@@ -17,6 +17,8 @@ menu_commited = -1;
 menu_control = true;
 oShipMenu.x = -1000;
 oShipMenu.y = -1000;
+soundOn = true;
+global.multiplayer = false;
 
 menu[4] = "1 player ";
 menu[3] = "2 players";

@@ -52,9 +52,9 @@ oShip.overheatBar = 0;
 alarm[5] = 0;
 alarm[6] = 15;
 if (!global.multiplayer)
-	alarm[4] = room_speed * 20;
+	alarm[4] = room_speed * 5;
 else
-	alarm[4] = 0;
+	alarm[4] = -1;
 instance_destroy(oCamera);
 instance_create_layer(0, 0, "Instances", oCamera);
 if(global.multiplayer)

@@ -65,4 +65,4 @@ if (!global.multiplayer)
 if (!global.multiplayer)
 	alarm[4] = room_speed / oShip.currentSpeed * 150;
 else
-	alarm[4] = 0;
+	alarm[4] = -1;
