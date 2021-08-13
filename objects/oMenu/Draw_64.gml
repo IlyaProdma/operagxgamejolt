@@ -4,14 +4,6 @@ draw_set_valign(fa_bottom);
 
 for(var i = 0; i < menu_items; i++)
 {
-	switch(menu_cursor)
-	{
-		case 4: oShipMenu.x = 550; oShipMenu.y = 170; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 3: oShipMenu.x = 550; oShipMenu.y = 230; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 2: oShipMenu.x = 550; oShipMenu.y = 290; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 1: oShipMenu.x = 550; oShipMenu.y = 350; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-		case 0: oShipMenu.x = 550; oShipMenu.y = 410; draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
-	};
 	
 	var offset = 2;
 	var txt = menu[i];
@@ -34,6 +26,15 @@ for(var i = 0; i < menu_items; i++)
 	draw_text(xx + offset, yy, txt);
 	draw_set_color(col);
 	draw_text(xx, yy, txt)
+	
+	switch(menu_cursor)
+	{
+		case 4: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 5 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 3: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 4 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 2: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 3 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 1: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 2 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+		case 0: oShipMenu.x = xx - 200; oShipMenu.y = menu_y - (menu_item_height * 1 * 2); draw_sprite_ext(oShipMenu, oShipMenu.x, oShipMenu.y, 0, 0, 0, 0, 0, 0); break;
+	};
 	
 }
 

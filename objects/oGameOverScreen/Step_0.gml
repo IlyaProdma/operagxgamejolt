@@ -1,5 +1,3 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
 menu_y += (menu_y_target - menu_y) / menu_speed;
 
 if(!sound)
@@ -10,7 +8,6 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_up))
 	{
 		menu_cursor++;
-		if(global.sound)
 		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor >= menu_items)
 		{
@@ -20,7 +17,6 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_down))
 	{
 		menu_cursor--;
-		if(global.sound)
 		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor < 0)
 		{

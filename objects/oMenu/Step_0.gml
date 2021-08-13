@@ -7,8 +7,7 @@ if(menu_control)
 {
 	if(keyboard_check_pressed(vk_up))
 	{
-		menu_cursor++;
-		if(global.sound)
+		menu_cursor++;		
 		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor >= menu_items)
 		{
@@ -18,7 +17,6 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_down))
 	{
 		menu_cursor--;
-		if(global.sound)
 		audio_play_sound(mMenuKeyClick, 1000, false);
 		if(menu_cursor < 0)
 		{
@@ -35,15 +33,13 @@ if(menu_control)
 		{
 			case 4: room_goto(Game); break;
 			case 2: room_goto(Help); break;
-			case 1: if(global.sound) {
+			case 1: if(menu[1] == "Sound:on") {
 						menu[1] = "Sound:off"; 
-						global.sound = false;
 						audio_master_gain(0);
 						break;
 						} 
 					else			 {
 						menu[1] = "Sound:on"; 
-						global.sound = true;
 						audio_master_gain(1);
 						break;
 						} 
@@ -54,7 +50,6 @@ if(menu_control)
 		{
 			case 4: room_goto(Game); break;
 			case 0: 
-			if(global.sound)
 				audio_play_sound(mMenuKeyClick, 1000, false);
 				room_goto(About);
 				break;
