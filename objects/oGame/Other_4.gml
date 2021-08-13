@@ -29,10 +29,13 @@ instance_destroy(oBoostItem);
 instance_destroy(oShield);
 instance_destroy(oShip);
 instance_destroy(oShip2);
+instance_destroy(oBorder);
 player = instance_create_layer(0, 0, "Instances", oShip);
 oCamera.follow = player;
 if (global.multiplayer)
 {
+	instance_create_layer(0, -400, "Barriers", oBorder);
+	instance_create_layer(0, 400, "Barriers", oBorder);
 	player2 = instance_create_layer(player.x, player.y+100, "Instances", oShip2);
 	oShip2.speed = 0;
 	oShip2.shieldActive = true;

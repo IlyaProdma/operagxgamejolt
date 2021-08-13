@@ -26,15 +26,21 @@ else
 }
 
 move = key_up - key_down;
-if(move == 1)
+if ( move == 1 && ( (y > -400 + sprite_height && global.multiplayer) ||  !global.multiplayer) )
 {
-	y -= vsp;
-	if (key_boost && boostBar > 0)
-		sprite_index = sShipBoostUpIdle;
-	else
-		sprite_index = sShipUpIdle;
+		y -= vsp;
+		if (key_boost && boostBar > 0)
+		{
+			sprite_index = sShipBoostUpIdle;
+		}
+		else
+			sprite_index = sShipUpIdle;
 }
-if(move == -1)
+if (y <= -380 + sprite_height || y >= 380 - sprite_height && global.multiplayer)
+	nearBorder = true;
+else
+	nearBorder = false;
+if ( move == -1 && ( (y < 400 - sprite_height && global.multiplayer) ||  !global.multiplayer) )
 {
 	y += vsp;
 	if (key_boost && boostBar > 0)

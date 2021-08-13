@@ -7,7 +7,7 @@ if (instance_exists(oBlackHole) && point_distance(x, y, oBlackHole.x, oBlackHole
 else
 {
 	dist = point_distance(x, y, oShip.x, oShip.y);
-	if(dist <= 300)
+	if(dist <= 300 && !oShip.nearBorder)
 	{
 		isActive = true;
 		with (oShip) 
@@ -25,17 +25,17 @@ else
 	}
 	else
 	{
-		if(isActive)
+		if(isActive || oShip.nearBorder)
 			with (oShip) 
-		{
-			isActive = false;
-			move_towards_point(oX, oY, 0);
-		}
+			{
+				move_towards_point(oX, oY, 0);
+			}
+		isActive = false;
 	}
-	if (instance_exists(oShip2))
+	/*if (instance_exists(oShip2))
 	{
 		dist = point_distance(x, y, oShip2.x, oShip2.y);
-		if(dist <= 300)
+		if(dist <= 300 && !oShip2.nearBorder)
 		{
 			isActive = true;
 			with (oShip2) 
@@ -53,13 +53,13 @@ else
 		}
 		else
 		{
-			if(isActive)
+			if(isActive || oShip2.nearBorder)
 				with (oShip2)
 				{
-					isActive = false;
 					move_towards_point(oX, oY, 0);
 				}
+			isActive = false;
 		}
-	}
+	}*/
 	if(x - oShip.x < -500) instance_destroy();
 }

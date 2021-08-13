@@ -24,16 +24,23 @@ else
 	audio_stop_sound(mBoost);
 	currentSpeed = constSpeed;
 }
+
 move = key_up - key_down;
-if(move == 1)
+if ( move == 1 && y > -400 + sprite_height)
 {
-	y -= vsp;
-	if (key_boost && boostBar > 0)
-		sprite_index = sShipBoostUpIdle2;
-	else
-		sprite_index = sShipUpIdle2;
+		y -= vsp;
+		if (key_boost && boostBar > 0)
+		{
+			sprite_index = sShipBoostUpIdle2;
+		}
+		else
+			sprite_index = sShipUpIdle2;
 }
-if(move == -1)
+if (y <= -380 + sprite_height || y >= 380 - sprite_height)
+	nearBorder = true;
+else
+	nearBorder = false;
+if ( move == -1 && y < 400 - sprite_height)
 {
 	y += vsp;
 	if (key_boost && boostBar > 0)
@@ -55,8 +62,8 @@ if(move == 0)
 		currentSpeed = constSpeed;
 	}
 }
-
-shoot = key_shoot - key_rocket;
+if(canshoot)
+	shoot = key_shoot - key_rocket;
 
 if(((shoot == 1) || (shoot == 0 && key_shoot)) && (firingDelay < 0) && overheatBar < overheatBar_max)
 {
@@ -99,10 +106,10 @@ if(boostBar > boostBar_max) boostBar = boostBar_max;
 if(overheatBar < 0 ) overheatBar = 0;
 if(overheatBar > overheatBar_max) overheatBar = overheatBar_max;
 
-if (instance_exists(shield2))
+if (instance_exists(shield))
 {
-	shield2.x = x + 5;
-	shield2.y = y;
-	if (shield2.hp <= 0)
+	shield.x = x + 5;
+	shield.y = y;
+	if (shield.hp <= 0)
 		shieldActive = false;
 }

@@ -22,7 +22,7 @@ overheatBar_height = 18;
 overheatBar_x = 230;
 overheatBar_y = room_height * 0.8;
 
-shield2 = instance_create_layer(x + 5, y, "Shields", oShield);
-
+shield = instance_create_layer(x + 5, y, "Shields", oShield);
+nearBorder = false;
 alarm[0] = room_speed;
 alarm[1] = room_speed;
