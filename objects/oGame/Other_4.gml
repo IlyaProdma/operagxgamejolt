@@ -58,3 +58,12 @@ alarm[6] = 15;
 
 instance_destroy(oCamera);
 instance_create_layer(0, 0, "Instances", oCamera);
+if(global.multiplayer)
+	{
+		layer_background_visible(layer_background_get_id("ElectricBorderUp"), true);
+		layer_background_visible(layer_background_get_id("ElectricBorderDown"), true);
+	}
+else {
+	layer_background_visible(layer_background_get_id("ElectricBorderUp"), false);
+	layer_background_visible(layer_background_get_id("ElectricBorderDown"), false);
+}

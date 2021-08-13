@@ -7,3 +7,4 @@ if (instance_exists(oShip2))
 }
 else
 	draw_text(room_width-150, 60, "ROCKETS: " + string(oShip.rockets));
+
