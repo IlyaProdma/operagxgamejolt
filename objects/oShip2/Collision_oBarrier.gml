@@ -1,3 +1,5 @@
-/// @description Вставьте описание здесь
-// Вы можете записать свой код в этом редакторе
-oGame.gameOver = true;
+if (!shieldActive)
+{
+	sprite_index = sShipDestroy2;
+	oGame.gameOver = true;
+}

@@ -68,6 +68,7 @@
     {"id":{"name":"oRocketItem","path":"objects/oRocketItem/oRocketItem.yy",},"order":13,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":4,},
     {"id":{"name":"sAsteroid8","path":"sprites/sAsteroid8/sAsteroid8.yy",},"order":31,},
+    {"id":{"name":"sShipDestroy2","path":"sprites/sShipDestroy2/sShipDestroy2.yy",},"order":58,},
     {"id":{"name":"sRocketItem","path":"sprites/sRocketItem/sRocketItem.yy",},"order":35,},
     {"id":{"name":"sPlanet","path":"sprites/sPlanet/sPlanet.yy",},"order":5,},
     {"id":{"name":"sRocket","path":"sprites/sRocket/sRocket.yy",},"order":17,},
