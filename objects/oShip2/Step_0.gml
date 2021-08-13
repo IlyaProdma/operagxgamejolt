@@ -1,8 +1,8 @@
-key_up = keyboard_check(vk_up);
-key_down = keyboard_check(vk_down);
-key_boost = keyboard_check(vk_space);
-key_shoot = keyboard_check(vk_enter);
-key_rocket = keyboard_check(vk_shift);
+key_up = keyboard_check(ord("W"));
+key_down = keyboard_check(ord("S"));
+key_boost = keyboard_check(ord("Q"));
+key_shoot = keyboard_check(ord("E"));
+key_rocket = keyboard_check(ord("R"));
 sprite_index = sShipNormal2;
 
 

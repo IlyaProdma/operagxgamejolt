@@ -1,8 +1,8 @@
-key_up = keyboard_check(ord("W"));
-key_down = keyboard_check(ord("S"));
-key_boost = keyboard_check(ord("Q"));
-key_shoot = keyboard_check(ord("E"));
-key_rocket = keyboard_check(ord("R"));
+key_up = keyboard_check(vk_up);
+key_down = keyboard_check(vk_down);
+key_boost = keyboard_check(vk_space);
+key_shoot = keyboard_check(vk_enter);
+key_rocket = keyboard_check(vk_shift);
 sprite_index = sShipNormal;
 
 
@@ -24,6 +24,7 @@ else
 	audio_stop_sound(mBoost);
 	currentSpeed = constSpeed;
 }
+
 move = key_up - key_down;
 if(move == 1)
 {
@@ -55,8 +56,8 @@ if(move == 0)
 		currentSpeed = constSpeed;
 	}
 }
-
-shoot = key_shoot - key_rocket;
+if(canshoot)
+	shoot = key_shoot - key_rocket;
 
 if(((shoot == 1) || (shoot == 0 && key_shoot)) && (firingDelay < 0) && overheatBar < overheatBar_max)
 {

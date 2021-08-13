@@ -49,3 +49,5 @@ oShip.vsp = 0;
 oShip.rockets = 1;
 oShip.boostBar = 500;
 oShip.overheatBar = 0;
+alarm[5] = 0;
+alarm[6] = 15;

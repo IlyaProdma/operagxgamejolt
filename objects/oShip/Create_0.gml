@@ -25,3 +25,4 @@ overheatBar_y = room_height * 0.8;
 shield = instance_create_layer(x + 5, y, "Shields", oShield);
 
 alarm[0] = room_speed;
+canshoot = false;
