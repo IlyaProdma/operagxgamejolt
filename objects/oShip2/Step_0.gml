@@ -13,8 +13,6 @@ vsp = 5;
 x += currentSpeed;
 if( (key_boost) && oShip.boostBar > 0)
 {
-	if (!audio_is_playing(mBoost))
-		audio_play_sound(mBoost, 1000, true);
 	currentSpeed = constSpeed + boost;
 	vsp += boost/2.5;
 	sprite_index = sShipBoost2;
