@@ -53,6 +53,7 @@
     {"id":{"name":"sShipBoostDownIdle","path":"sprites/sShipBoostDownIdle/sShipBoostDownIdle.yy",},"order":52,},
     {"id":{"name":"oBoostItem","path":"objects/oBoostItem/oBoostItem.yy",},"order":15,},
     {"id":{"name":"oEmptyObj","path":"objects/oEmptyObj/oEmptyObj.yy",},"order":18,},
+    {"id":{"name":"MenuFont2","path":"fonts/MenuFont2/MenuFont2.yy",},"order":1,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":0,},
     {"id":{"name":"sAsteroid3","path":"sprites/sAsteroid3/sAsteroid3.yy",},"order":26,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":36,},
